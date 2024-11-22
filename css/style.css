@@ -13,6 +13,76 @@ button:hover {
   background-color: red;
 }
 
+
+
+
+
+
+
+
+/* label {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: #d85454;
+  border-radius: 200px;
+} */
+
+/* label i {
+  position: fixed;
+  right: 200px;
+  top: 28px;
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 100;
+}
+
+label::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+
+  right: 195px;
+  top: 7px;
+
+  background: #fff;
+  border-radius: 200px;
+
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+} */
+
+/* input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input::checked+label {
+  background-color: #242424;
+} */
+
+/* input::checked + label::after {
+  left: 490px;
+} */
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+
+/* 
+input:checked+label+.background {
+  background: #242424;
+} */
+
 *::selection {
   background-color: #d85454;
   color: white;
@@ -52,6 +122,7 @@ button:hover {
   justify-content: space-between;
 }
 
+/* ------------------------------------------------- */
 nav .nav-links a:hover {
   color: #000;
 }
@@ -61,6 +132,12 @@ nav a.active::before {
   width: calc(100% - (var(--inline-gap) * 2));
 }
 
+/* ------------------------------------------------- */
+/* .nav .container .nav_link ul li:hover a {
+  border-bottom: #d85454 1px solid;
+  text-decoration: underline;
+  border-radius: 0%;
+} */
 .nav .container .nav_link a {
   color: black;
   text-decoration: none;
@@ -74,11 +151,74 @@ nav a.active::before {
   color: black;
 }
 
+/* .nav:has(.nav_link:target) {
+  height: 100%;
+  background-color: hsl(0, 84%, 44%);
+}
+
+.nav .nav_link:target {
+  transform: translateX(0);
+}
+.nav .nav_link a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: #d85454;
+  transition: all 400ms;
+}
+ */
+
 .nav .dark-mode i {
   cursor: pointer;
   font-size: 25px;
 }
 
+/* --------------------------------------- */
+
+/* .Home {
+  background-color: #eeeeee;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .Home_contant {
+      width: 40%;
+      h2 {
+        font-weight: 400;
+        font-size: 4.0625rem;
+        text-transform: uppercase;
+      }
+      p {
+        margin-block: 20px;
+        line-height: 1.6;
+        font-size: 1rem;
+        background-color: #d85454;
+        color: #4f4f5a;
+        font-family: "Open Sans";
+      }
+    }
+    .Home_image {
+      width: 40%;
+      img {
+        width: 100%;
+        filter: drop-shadow(4px 4px 9px #000a);
+        transition: all 400ms;
+      }
+      img:hover {
+        animation: shaking 1s infinite;
+      }
+    }
+  }
+} */
 /* -----------------------Home------------------------------------- */
 .Home {
   background-color: #eee;
@@ -124,6 +264,7 @@ nav a.active::before {
   margin-block: 20px;
   line-height: 1.6;
   font-size: 1rem;
+  /* background-color: #d85454; */
   color: #4f4f5a;
   font-family: "Open Sans";
 }
@@ -164,9 +305,11 @@ nav a.active::before {
   width: 3.4375rem;
   height: 3.4375rem;
   border-radius: 50%;
-  background-image: linear-gradient(to right,
-      hsl(0, 84%, 44%) 0 50%,
-      transparent 50% 100%);
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 84%, 44%) 0 50%,
+    transparent 50% 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,10 +334,60 @@ nav a.active::before {
   z-index: 5;
 }
 
+/* .watch i {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.watch:hover {
+  color: #d85454;
+} */
 
 /* ---------------------------chefs------------------------------------ */
+/* .chefs .container {
+  height: 10010px;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+.chefs .container .title {
+  text-align: center;
+  margin-bottom: 1.5625rem;
+}
+.chefs .container .title span {
+  color: hsl(0, 84%, 44%);
+}
+.chefs .container .title h2 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+.chefs .container .title p {
+  font-size: 3.125rem;
+  font-family: "Amatic SC", sans-serif;
+}
+.chefs .container .chef-cards .card {
+  width: 33.33%;
+  padding: 0 10px;
+}
+.chefs .container .chef-cards .card img {
+  width: 100%;
+  vertical-align: middle;
+}
+.chefs .container .chef-cards {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  column-gap: 0.25%;
+} */
+/* --------------------chefs------------------------ */
 .chefs {
   .container {
+    /* height: 10010px; */
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
 
@@ -224,8 +417,9 @@ nav a.active::before {
       padding-block: 1.25rem;
       display: flex;
       flex-wrap: wrap;
-      width: 1320px;
+      /* width: 1320px; */
       margin: auto;
+      width: 80%;
       justify-content: center;
       align-items: center;
 
@@ -267,6 +461,7 @@ nav a.active::before {
         .social-box {
           background-color: #ffffff4d;
           width: fit-content;
+          /* width: 30px; */
           padding: 0.625rem;
           border-radius: 0.3125rem;
           position: absolute;
@@ -388,6 +583,7 @@ nav a.active::before {
   left: 0;
   width: 100%;
   height: 100%;
+  /* z-index: 5; */
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -409,8 +605,6 @@ nav a.active::before {
   overflow: hidden;
 }
 
-*/
-
 /* -----------------------------contact us-------------------------- */
 .main-title {
   text-align: center;
@@ -430,7 +624,6 @@ nav a.active::before {
   height: 21.875rem;
 }
 
-
 .contact .details {
   margin-block: 1.5625rem;
   display: flex;
@@ -438,7 +631,7 @@ nav a.active::before {
   gap: 0.9375rem;
 }
 
-.contact .details>div {
+.contact .details > div {
   width: calc(calc(100% - 0.9375rem) / 2);
   display: flex;
   align-items: center;
@@ -457,7 +650,7 @@ nav a.active::before {
   margin-right: 10px;
 }
 
-.contact .details>div h3 {
+.contact .details > div h3 {
   color: #7d7d7d;
   font-size: 1.25rem;
   font-weight: 700;
@@ -479,7 +672,7 @@ nav a.active::before {
   gap: 0.9375rem;
 }
 
-.contact form>* {
+.contact form > * {
   width: 100%;
 }
 
@@ -488,7 +681,6 @@ nav a.active::before {
   flex-wrap: wrap;
   gap: 0.9375rem;
 }
-
 
 .contact form :is(input, textarea) {
   padding: 0.9375rem 0.9375rem;
@@ -508,7 +700,6 @@ nav a.active::before {
   border-color: #d85454;
 }
 
-
 .contact .input-group input {
   width: calc(calc(100% - 0.9375rem) / 2);
 }
@@ -524,16 +715,17 @@ nav a.active::before {
   margin-top: 1.5625rem;
   width: fit-content;
   border-radius: 20px;
+  font-family: inherit;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
 
-
 /* -------------------------------footer--------------------------- */
 .footer {
-  background-image: linear-gradient(#0009, #0009), url(../image/textured-metal-background.jpg);
+  background-image: linear-gradient(#0009, #0009),
+    url(../image/textured-metal-background.jpg);
   color: #fff;
   box-shadow: 0px -1px 5px #0007;
   background-size: contain;
@@ -610,7 +802,6 @@ nav a.active::before {
   padding: 0.625rem;
 }
 
-
 .btn {
   padding: 0.3125rem 0.75rem;
   border: 0.125rem solid transparent;
@@ -676,8 +867,7 @@ a {
 }
 
 h3 {
-  font-family: "Inter",
-    sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* -------------------------------------------------------------------- */
@@ -727,9 +917,110 @@ h3 {
   }
 }
 
-/* ---------------------------------------------- */
-@media (min-width:640px) {}
 
-@media (min-width:768px) {}
+/* -------------------------------------------------------------------- */
+/* -------------------- Small Devices (Mobile) -------------------- */
+@media (max-width: 600px) {
 
-@media (min-width:1024px) {}
+
+  .Home .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .Home .container .Home_contant,
+  .Home .container .Home_image {
+    width: 80%;
+  }
+  .Home .container .Home_contant h2 {
+    font-weight: 400;
+    font-size: 2.0625rem;
+    text-transform: uppercase;
+  }
+  .nav .container .nav_link ul {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 2px;
+  }
+
+  .nav .container .nav_link a {
+    padding: 0.5rem 0;
+  }
+
+  .chefs .container .chef-cards {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width:600px;
+  }
+  .chefs .container .chef-cards .card {
+    width: calc(calc(100% - 1.875rem * 2) / 1);}
+  .contact .details > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* -------------------- Medium Devices (Tablets) -------------------- */
+@media (min-width: 601px) and (max-width: 768px) {
+
+  .Home .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Home .container .Home_contant,
+  .Home .container .Home_image {
+    width: 90%;
+  }
+
+  .nav .container .nav_link ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .chefs .container .chef-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* -------------------- Large Devices (Desktops) -------------------- */
+@media (min-width: 769px) {
+  .Home .container {
+    justify-content: space-between;
+  }
+
+  .Home .container .Home_contant,
+  .Home .container .Home_image {
+    width: 40%;
+  }
+
+  .nav .container .nav_link ul {
+    justify-content: space-between;
+  }
+
+  .chefs .container .chef-cards {
+    flex-direction: row;
+  }
+
+  .footer .container {
+    flex-wrap: wrap;
+  }
+
+  .footer .container :is(.about, .contact-details) {
+    width: calc(calc(100% - 1.25rem * 2) / 4);
+  }
+}

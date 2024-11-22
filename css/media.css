@@ -9,7 +9,7 @@
         max-width: 768px;
     }
 
-    /* .nav_link ul {
+    .nav_link ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -18,7 +18,7 @@
 
     a {
         text-decoration: none;
-    } */
+    }
 
 }
 
