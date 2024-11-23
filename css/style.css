@@ -305,11 +305,9 @@ nav a.active::before {
   width: 3.4375rem;
   height: 3.4375rem;
   border-radius: 50%;
-  background-image: linear-gradient(
-    to right,
-    hsl(0, 84%, 44%) 0 50%,
-    transparent 50% 100%
-  );
+  background-image: linear-gradient(to right,
+      hsl(0, 84%, 44%) 0 50%,
+      transparent 50% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -631,7 +629,7 @@ nav a.active::before {
   gap: 0.9375rem;
 }
 
-.contact .details > div {
+.contact .details>div {
   width: calc(calc(100% - 0.9375rem) / 2);
   display: flex;
   align-items: center;
@@ -650,7 +648,7 @@ nav a.active::before {
   margin-right: 10px;
 }
 
-.contact .details > div h3 {
+.contact .details>div h3 {
   color: #7d7d7d;
   font-size: 1.25rem;
   font-weight: 700;
@@ -672,7 +670,7 @@ nav a.active::before {
   gap: 0.9375rem;
 }
 
-.contact form > * {
+.contact form>* {
   width: 100%;
 }
 
@@ -927,16 +925,18 @@ h3 {
     flex-direction: column-reverse;
     align-items: center;
   }
-  
+
   .Home .container .Home_contant,
   .Home .container .Home_image {
     width: 80%;
   }
+
   .Home .container .Home_contant h2 {
     font-weight: 400;
     font-size: 2.0625rem;
     text-transform: uppercase;
   }
+
   .nav .container .nav_link ul {
     flex-direction: column;
     align-items: center;
@@ -952,11 +952,14 @@ h3 {
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-    width:600px;
+    width: 600px;
   }
+
   .chefs .container .chef-cards .card {
-    width: calc(calc(100% - 1.875rem * 2) / 1);}
-  .contact .details > div {
+    width: calc(calc(100% - 1.875rem * 2) / 1);
+  }
+
+  .contact .details>div {
     flex-direction: column;
     align-items: center;
   }
